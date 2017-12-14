@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
-gem 'cancancan'
+gem 'cancancan', '~> 2.0'
 gem 'devise'
 gem 'rolify'
 
@@ -25,6 +25,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'faker'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -38,7 +39,6 @@ group :test do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'database_cleaner'
-  gem 'rspec-rails', '~> 3.5'
 end
 
 
