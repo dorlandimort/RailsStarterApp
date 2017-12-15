@@ -434,7 +434,6 @@ a.bg-danger:focus {
   box-shadow: 0 1px 0 #fff;
 }
 .page-header-inverse.has-cover {
-  background: url(../images/login_cover.jpg);
   background-size: cover;
 }
 .page-header-default {
@@ -4146,7 +4145,7 @@ select[multiple].input-group-xs > .input-group-btn > .btn {
     -webkit-box-shadow: 0 1px 0 #fff;
     box-shadow: 0 1px 0 #fff;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu a:not(.label-flat):not(.badge-flat):not(.disabled > a) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu a:not(.label-flat):not(.badge-flat):not(.disabled  a) {
     color: rgba(255, 255, 255, 0.9);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
