@@ -8,6 +8,7 @@ es:
     password_repeat: 'Repetir contraseña'
     register: 'Registrarse'
     credentials: 'Sus credenciales'
+    logout: 'Cerrar sesión'
   login:
     labels:
       login_message: 'Ingrese a su cuenta'
