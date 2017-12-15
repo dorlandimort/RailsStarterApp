@@ -12,4 +12,15 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require plugins/loaders/pace.min
+//= require jquery/jquery.min
+//= require bootstrap/bootstrap.min
+//= require plugins/loaders/blockui.min
+//= require plugins/forms/styling/uniform.min
+//= require app
+//= require login
+//= require plugins/ui/ripple.min
+//= require plugins/notifications/pnotify.min
+//= require core/notifications
+
+
