@@ -1,0 +1,23 @@
+es:
+  auth:
+    username: 'Nombre'
+    email: 'Correo electrónico'
+    create_account: 'Crear una cuenta'
+    fields_required: 'Todos los campos son requeridos'
+    password: 'Contraseña'
+    password_repeat: 'Repetir contraseña'
+    register: 'Registrarse'
+    credentials: 'Sus credenciales'
+  login:
+    labels:
+      login_message: 'Ingrese a su cuenta'
+      credentials: 'Sus credenciales'
+      remember: 'Recordarme'
+      forgot_password: 'Olvidó su contraseña?'
+      login: 'Iniciar sesión'
+      other_options: 'O inicie sesión con'
+      no_account: 'No tiene una cuenta?'
+      signup: 'Registrarse'
+    fields:
+      email: 'Correo electrónico'
+      password: 'Contraseña'
