@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Iniciar Sesión</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body class="login-container">
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header">
+
+    <ul class="nav navbar-nav pull-right visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#">
+          <i class="icon-display4"></i> <span class="visible-xs-inline-block position-right"> Go to website</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="icon-user-tie"></i> <span class="visible-xs-inline-block position-right"> Contact admin</span>
+        </a>
+      </li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">
+          <i class="icon-cog3"></i>
+          <span class="visible-xs-inline-block position-right"> Options</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="page-container">
+  <%= yield %>
+  <% flash.each do |key, value| %>
+    <% if key == 'alert' %>
+      <input type="hidden" class="error" value="<%= value %>">
+    <% elsif key == 'message' %>
+      <input type="hidden" class="message" value="<%= value %>">
+    <% elsif key == 'warning' %>
+      <input type="hidden" class="warning" value="<%= value %>">
+    <% end %>
+  <% end %>
+</div>
+</body>
+</html>
