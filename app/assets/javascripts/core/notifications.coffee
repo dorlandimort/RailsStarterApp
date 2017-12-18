@@ -2,7 +2,7 @@ $(document).on 'turbolinks:load', ->
   $('.error').each (index) ->
     text = $(this).val()
     Notification.error text
-    $(this).remove()
+    #$(this).remove()
     return
 
 stack_bottomright =
@@ -13,6 +13,7 @@ stack_bottomright =
 
 
 Notification = error: (text) ->
+  console.log stack_bottomright
   new PNotify(
     text: text,
     type: 'error'
