@@ -10,7 +10,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<body class="login-container">
+<body class="login-container <%= controller_name %> <%= action_name %>">
 <!-- Main navbar -->
 <div class="navbar navbar-inverse bg-indigo">
   <div class="navbar-header">
